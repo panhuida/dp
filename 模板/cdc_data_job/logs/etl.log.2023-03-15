@@ -1,0 +1,69 @@
+2023-03-14 20:32:17 INFO 10272-main.py-16: ========================etl begin========================
+2023-03-14 20:32:17 INFO 10272-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-14 20:32:17 INFO 10272-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-14 20:32:17 INFO 10272-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-14 20:32:17 INFO 10272-main.py-31: =========================etl end=========================
+
+
+2023-03-14 20:35:18.uuu INFO 5260-main.py-16: ========================etl begin========================
+2023-03-14 20:35:18.uuu INFO 5260-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-14 20:35:18.uuu INFO 5260-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-14 20:35:18.uuu INFO 5260-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-14 20:35:18.uuu INFO 5260-main.py-31: =========================etl end=========================
+
+
+2023-03-14 20:36:32,uuu INFO 5360-main.py-16: ========================etl begin========================
+2023-03-14 20:36:32,uuu INFO 5360-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-14 20:36:32,uuu INFO 5360-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-14 20:36:32,uuu INFO 5360-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-14 20:36:32,uuu INFO 5360-main.py-31: =========================etl end=========================
+
+
+2023-03-14 20:38:08,335 INFO 6988-main.py-16: ========================etl begin========================
+2023-03-14 20:38:08,336 INFO 6988-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-14 20:38:08,382 INFO 6988-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-14 20:38:08,387 INFO 6988-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-14 20:38:08,397 INFO 6988-main.py-31: =========================etl end=========================
+
+
+2023-03-14 21:27:16,625 INFO 17784-main.py-16: ========================etl begin========================
+2023-03-14 21:27:16,632 INFO 17784-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-14 21:27:16,677 INFO 17784-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-14 21:27:16,697 INFO 17784-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-14 21:27:16,706 INFO 17784-main.py-31: =========================etl end=========================
+
+
+2023-03-14 21:34:05,648 INFO 3816-main.py-16: ========================etl begin========================
+2023-03-14 21:34:05,650 INFO 3816-main.py-21: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-14 21:34:05,681 INFO 3816-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-14 21:34:05,685 INFO 3816-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-14 21:34:05,692 INFO 3816-main.py-32: =========================etl end=========================
+
+
+2023-03-14 22:08:38,901 INFO 7036-main.py-16: ========================etl begin========================
+2023-03-14 22:08:38,902 INFO 7036-main.py-21: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-14 22:08:38,945 INFO 7036-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-14 22:08:38,958 INFO 7036-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-14 22:08:38,963 INFO 7036-main.py-32: =========================etl end=========================
+
+
+2023-03-15 09:41:21,174 INFO 19460-main.py-16: ========================etl begin========================
+2023-03-15 09:41:21,174 INFO 19460-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-15 09:41:21,270 INFO 19460-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-15 09:41:21,311 INFO 19460-executor.py-60: sql: etl/ads_orders.sql executed successfully.
+2023-03-15 09:41:21,320 INFO 19460-main.py-31: =========================etl end=========================
+
+
+2023-03-15 09:43:37,714 INFO 8696-main.py-17: ========================etl begin========================
+2023-03-15 09:43:37,714 INFO 8696-main.py-21: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-15 09:43:37,761 INFO 8696-main.py-32: =========================etl end=========================
+
+
+2023-03-15 09:44:49,531 INFO 21368-main.py-17: ========================etl begin========================
+2023-03-15 09:44:49,531 INFO 21368-main.py-21: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': None}
+2023-03-15 09:44:49,562 INFO 21368-main.py-32: =========================etl end=========================
+
+
+2023-03-15 11:01:05,729 INFO 6552-wechat.py-49: Send message to wechat Failed.
+2023-03-15 11:19:14,226 INFO 9996-wechat.py-49: Send message to wechat Failed.
+2023-03-15 11:32:09,560 INFO 19996-wechat.py-48: Send message to wechat successfully.

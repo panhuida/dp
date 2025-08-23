@@ -1,0 +1,52 @@
+2023-03-20 20:33:12,562 INFO 20160-main.py-16: ========================etl begin========================
+2023-03-20 20:33:12,567 INFO 20160-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-20 20:33:45,425 INFO 20160-wechat.py-48: Send message to wechat successfully.
+2023-03-20 20:34:18,911 INFO 20160-wechat.py-48: Send message to wechat successfully.
+2023-03-20 20:34:41,185 INFO 20160-wechat.py-48: Send message to wechat successfully.
+2023-03-20 20:34:41,187 INFO 20160-main.py-31: =========================etl end=========================
+
+
+2023-03-20 20:47:51,169 INFO 10320-main.py-16: ========================etl begin========================
+2023-03-20 20:47:51,171 INFO 10320-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-20 20:47:51,392 INFO 10320-executor.py-54: sql: etl/etl_start.sql execution start.
+2023-03-20 20:47:51,398 INFO 10320-executor.py-61: sql: etl/etl_start.sql executed successfully.
+2023-03-20 20:47:51,488 INFO 10320-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-20 20:47:51,514 INFO 10320-executor.py-61: sql: etl/ads_orders.sql executed successfully.
+2023-03-20 20:47:51,641 INFO 10320-executor.py-54: sql: etl/etl_end.sql execution start.
+2023-03-20 20:47:51,647 INFO 10320-executor.py-61: sql: etl/etl_end.sql executed successfully.
+2023-03-20 20:47:51,710 INFO 10320-main.py-31: =========================etl end=========================
+
+
+2023-03-20 20:48:32,503 INFO 20280-main.py-16: ========================etl begin========================
+2023-03-20 20:48:32,504 INFO 20280-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-20 20:48:32,551 INFO 20280-executor.py-54: sql: etl/etl_start.sql execution start.
+2023-03-20 20:48:32,556 INFO 20280-executor.py-61: sql: etl/etl_start.sql executed successfully.
+2023-03-20 20:48:32,641 INFO 20280-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-20 20:48:32,651 INFO 20280-executor.py-61: sql: etl/ads_orders.sql executed successfully.
+2023-03-20 20:48:32,748 INFO 20280-executor.py-54: sql: etl/etl_end.sql execution start.
+2023-03-20 20:48:32,751 INFO 20280-executor.py-61: sql: etl/etl_end.sql executed successfully.
+2023-03-20 20:48:32,804 INFO 20280-main.py-31: =========================etl end=========================
+
+
+2023-03-20 20:49:59,527 INFO 17724-main.py-16: ========================etl begin========================
+2023-03-20 20:49:59,529 INFO 17724-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-20 19:00:00,end_date=2023-03-20 20:00:00', 'begin_date': '2023-03-20 19:00:00', 'end_date': '2023-03-20 20:00:00'}
+2023-03-20 20:49:59,576 INFO 17724-executor.py-54: sql: etl/etl_start.sql execution start.
+2023-03-20 20:49:59,580 INFO 17724-executor.py-61: sql: etl/etl_start.sql executed successfully.
+2023-03-20 20:49:59,679 INFO 17724-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-20 20:49:59,687 INFO 17724-executor.py-61: sql: etl/ads_orders.sql executed successfully.
+2023-03-20 20:49:59,771 INFO 17724-executor.py-54: sql: etl/etl_end.sql execution start.
+2023-03-20 20:49:59,773 INFO 17724-executor.py-61: sql: etl/etl_end.sql executed successfully.
+2023-03-20 20:49:59,826 INFO 17724-main.py-31: =========================etl end=========================
+
+
+2023-03-20 20:50:02,362 INFO 24156-main.py-16: ========================etl begin========================
+2023-03-20 20:50:02,365 INFO 24156-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-20 19:00:00,end_date=2023-03-20 20:00:00', 'begin_date': '2023-03-20 19:00:00', 'end_date': '2023-03-20 20:00:00'}
+2023-03-20 20:50:02,418 INFO 24156-executor.py-54: sql: etl/etl_start.sql execution start.
+2023-03-20 20:50:02,424 INFO 24156-executor.py-61: sql: etl/etl_start.sql executed successfully.
+2023-03-20 20:50:02,519 INFO 24156-executor.py-54: sql: etl/ads_orders.sql execution start.
+2023-03-20 20:50:02,529 INFO 24156-executor.py-61: sql: etl/ads_orders.sql executed successfully.
+2023-03-20 20:50:02,613 INFO 24156-executor.py-54: sql: etl/etl_end.sql execution start.
+2023-03-20 20:50:02,616 INFO 24156-executor.py-61: sql: etl/etl_end.sql executed successfully.
+2023-03-20 20:50:02,676 INFO 24156-main.py-31: =========================etl end=========================
+
+

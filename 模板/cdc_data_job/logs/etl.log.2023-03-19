@@ -1,0 +1,42 @@
+2023-03-19 18:50:02,231 INFO 2876-main.py-16: ========================etl begin========================
+2023-03-19 18:50:02,235 INFO 2876-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 18:50:02,458 INFO 2876-executor.py-52: sql: etl/etl_start.sql
+ execution start.
+2023-03-19 18:50:02,459 ERROR 2876-executor.py-73: etl执行失败: [Errno 22] Invalid argument: 'etl/etl_start.sql\n'.
+2023-03-19 18:50:02,501 INFO 2876-executor.py-52: sql: etl/ads_orders.sql
+ execution start.
+2023-03-19 18:50:02,502 ERROR 2876-executor.py-73: etl执行失败: [Errno 22] Invalid argument: 'etl/ads_orders.sql\n'.
+2023-03-19 18:50:02,541 INFO 2876-executor.py-52: sql: etl/etl_end.sql execution start.
+2023-03-19 18:50:02,556 INFO 2876-executor.py-59: sql: etl/etl_end.sql executed successfully.
+2023-03-19 18:50:02,606 INFO 2876-main.py-31: =========================etl end=========================
+
+
+2023-03-19 18:51:24,841 INFO 17364-main.py-16: ========================etl begin========================
+2023-03-19 18:51:24,843 INFO 17364-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 18:51:24,883 INFO 17364-executor.py-52: sql: etl/etl_start.sql execution start.
+2023-03-19 18:51:24,888 INFO 17364-executor.py-59: sql: etl/etl_start.sql executed successfully.
+2023-03-19 18:51:24,978 INFO 17364-executor.py-52: sql: etl/ads_orders.sql execution start.
+2023-03-19 18:51:24,996 INFO 17364-executor.py-59: sql: etl/ads_orders.sql executed successfully.
+2023-03-19 18:51:25,093 INFO 17364-executor.py-52: sql: etl/etl_end.sql execution start.
+2023-03-19 18:51:25,098 INFO 17364-executor.py-59: sql: etl/etl_end.sql executed successfully.
+2023-03-19 18:51:25,168 INFO 17364-main.py-31: =========================etl end=========================
+
+
+2023-03-19 18:51:58,619 INFO 2904-main.py-16: ========================etl begin========================
+2023-03-19 18:51:58,621 INFO 2904-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 18:52:54,870 INFO 13100-main.py-16: ========================etl begin========================
+2023-03-19 18:52:54,872 INFO 13100-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 18:58:32,281 INFO 11020-main.py-16: ========================etl begin========================
+2023-03-19 18:58:32,282 INFO 11020-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 18:58:55,474 INFO 11020-wechat.py-48: Send message to wechat successfully.
+2023-03-19 18:58:55,477 INFO 11020-main.py-34: =========================etl end=========================
+
+
+2023-03-19 19:05:23,976 INFO 7272-main.py-16: ========================etl begin========================
+2023-03-19 19:05:23,977 INFO 7272-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 19:05:42,074 INFO 7272-wechat.py-48: Send message to wechat successfully.
+2023-03-19 19:07:28,114 INFO 20868-main.py-16: ========================etl begin========================
+2023-03-19 19:07:28,116 INFO 20868-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 19:08:18,733 INFO 2884-main.py-16: ========================etl begin========================
+2023-03-19 19:08:18,734 INFO 2884-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-19 19:08:50,974 INFO 2884-wechat.py-48: Send message to wechat successfully.

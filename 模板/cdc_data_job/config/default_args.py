@@ -1,0 +1,6 @@
+server_addresses = 'http://172.31.185.162:8848'
+namespace = 'dev'
+username = 'devUser'
+password = 'devUser'
+data_id = 'cdc-data-service.yml'
+group = 'DEFAULT_GROUP'

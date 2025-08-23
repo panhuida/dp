@@ -1,0 +1,5 @@
+etl/dws_edr_stat_indicator.sql
+etl/dim_extend_update.sql
+etl/dim_ch_inspection_item.sql
+etl/dim_dict.sql
+etl/dim_street_info.sql

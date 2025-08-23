@@ -1,0 +1,165 @@
+2023-03-18 16:58:57,775 INFO 14764-main.py-16: ========================etl begin========================
+2023-03-18 16:58:57,779 INFO 14764-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ADS_ORDERS', 'parameter_values': "begin_date='2023-03-18", 'begin_date': "'2023-03-18"}
+2023-03-18 16:58:57,832 ERROR 14764-executor.py-53: log execution failed: 'end_date'
+2023-03-18 17:12:43,288 INFO 14040-main.py-16: ========================etl begin========================
+2023-03-18 17:12:43,290 INFO 14040-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18', 'begin_date': '2023-03-18'}
+2023-03-18 17:12:43,328 ERROR 14040-executor.py-52: log execution failed: 'end_date'
+2023-03-18 17:13:18,898 INFO 7920-main.py-16: ========================etl begin========================
+2023-03-18 17:13:18,900 INFO 7920-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 17:13:18,996 ERROR 7920-executor.py-52: log execution failed: relation "dw.etl_log" does not exist
+LINE 1: insert into dw.etl_log 
+                    ^
+QUERY:  insert into dw.etl_log 
+(
+ id
+,etl_name
+,etl_type
+,etl_params
+,etl_params_start_date
+,etl_params_end_date
+,start_datetime
+,end_datetime
+,status
+,error_info
+,create_datetime
+,update_datetime
+,delete_flag
+)
+select 
+     concat(v_begin_date, v_mapping_name) id  -- 唯一主键
+    ,v_mapping_name etl_name  -- etl名称
+    ,null etl_type  -- etl类型
+    ,v_parameter_values etl_params  -- etl入参
+    ,null etl_params_start_date  -- etl入参开始时间
+    ,null etl_params_end_date  -- etl入参结束时间
+    ,v_begin_date start_datetime  -- etl执行时间
+    ,case when v_end_date = '' then null else v_end_date::timestamp end end_datetime  -- etl结束时间
+    ,v_status status  -- etl状态
+    ,v_error_info error_info  -- etl异常信息
+    ,localtimestamp create_datetime  -- 创建时间
+    ,localtimestamp update_datetime  -- 更新时间
+    ,'0' delete_flag  -- 删除标识
+on conflict (id)
+do update set
+     etl_params = excluded.etl_params
+    ,etl_params_start_date = excluded.etl_params_start_date
+    ,etl_params_end_date = excluded.etl_params_end_date
+    ,start_datetime = excluded.start_datetime
+    ,end_datetime = excluded.end_datetime
+    ,status = excluded.status
+    ,error_info = excluded.error_info
+    ,update_datetime = excluded.update_datetime
+    ,delete_flag = excluded.delete_flag
+CONTEXT:  PL/pgSQL function inline_code_block line 76 at SQL statement
+
+2023-03-18 17:27:31,962 INFO 17640-main.py-16: ========================etl begin========================
+2023-03-18 17:27:31,964 INFO 17640-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 17:27:32,040 ERROR 17640-executor.py-52: log execution failed: column "start_datetime" is of type timestamp without time zone but expression is of type character varying
+LINE 24:     ,v_begin_date start_datetime  -- etl执行时间
+              ^
+HINT:  You will need to rewrite or cast the expression.
+QUERY:  insert into public.etl_log 
+(
+ id
+,etl_name
+,etl_type
+,etl_params
+,etl_params_start_date
+,etl_params_end_date
+,start_datetime
+,end_datetime
+,status
+,error_info
+,create_datetime
+,update_datetime
+,delete_flag
+)
+select 
+     concat(v_begin_date, v_mapping_name) id  -- 唯一主键
+    ,v_mapping_name etl_name  -- etl名称
+    ,null etl_type  -- etl类型
+    ,v_parameter_values etl_params  -- etl入参
+    ,null etl_params_start_date  -- etl入参开始时间
+    ,null etl_params_end_date  -- etl入参结束时间
+    ,v_begin_date start_datetime  -- etl执行时间
+    ,case when v_end_date = '' then null else v_end_date::timestamp end end_datetime  -- etl结束时间
+    ,v_status status  -- etl状态
+    ,v_error_info error_info  -- etl异常信息
+    ,localtimestamp create_datetime  -- 创建时间
+    ,localtimestamp update_datetime  -- 更新时间
+    ,'0' delete_flag  -- 删除标识
+on conflict (id)
+do update set
+     etl_params = excluded.etl_params
+    ,etl_params_start_date = excluded.etl_params_start_date
+    ,etl_params_end_date = excluded.etl_params_end_date
+    ,start_datetime = excluded.start_datetime
+    ,end_datetime = excluded.end_datetime
+    ,status = excluded.status
+    ,error_info = excluded.error_info
+    ,update_datetime = excluded.update_datetime
+    ,delete_flag = excluded.delete_flag
+CONTEXT:  PL/pgSQL function inline_code_block line 76 at SQL statement
+
+2023-03-18 17:28:02,276 INFO 17640-wechat.py-48: Send message to wechat successfully.
+2023-03-18 17:28:02,279 INFO 17640-main.py-31: =========================etl end=========================
+
+
+2023-03-18 17:30:23,741 INFO 9500-main.py-16: ========================etl begin========================
+2023-03-18 17:30:23,743 INFO 9500-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 17:30:23,808 INFO 9500-executor.py-57: sql: etl/ads_orders.sql execution start.
+2023-03-18 17:30:23,834 INFO 9500-executor.py-63: sql: etl/ads_orders.sql executed successfully.
+2023-03-18 17:30:23,888 INFO 9500-main.py-31: =========================etl end=========================
+
+
+2023-03-18 17:42:48,538 INFO 16612-main.py-16: ========================etl begin========================
+2023-03-18 17:42:48,539 INFO 16612-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 17:42:48,580 ERROR 16612-executor.py-51: log execution failed: "v_parameter_begin_date" is not a known variable
+LINE 32:     v_parameter_begin_date := '2023-03-18 15:00:00';
+             ^
+
+2023-03-18 17:42:58,330 INFO 16612-wechat.py-48: Send message to wechat successfully.
+2023-03-18 17:42:58,331 INFO 16612-main.py-31: =========================etl end=========================
+
+
+2023-03-18 17:43:26,295 INFO 12224-main.py-16: ========================etl begin========================
+2023-03-18 17:43:26,297 INFO 12224-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 17:43:26,347 INFO 12224-executor.py-56: sql: etl/ads_orders.sql execution start.
+2023-03-18 17:43:26,353 INFO 12224-executor.py-62: sql: etl/ads_orders.sql executed successfully.
+2023-03-18 17:43:26,408 INFO 12224-main.py-31: =========================etl end=========================
+
+
+2023-03-18 17:44:10,146 INFO 4380-main.py-16: ========================etl begin========================
+2023-03-18 17:44:10,148 INFO 4380-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 17:44:10,193 INFO 4380-executor.py-56: sql: etl/ads_orders.sql execution start.
+2023-03-18 17:44:10,197 INFO 4380-executor.py-62: sql: etl/ads_orders.sql executed successfully.
+2023-03-18 17:44:10,245 INFO 4380-main.py-31: =========================etl end=========================
+
+
+2023-03-18 17:44:32,230 INFO 7176-main.py-16: ========================etl begin========================
+2023-03-18 17:44:32,232 INFO 7176-main.py-20: sql_params: {'sql_file': 'etl/ads_orders.sql', 'sql_list_file': None, 'mapping_name': 'ads_orders', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 17:44:32,298 INFO 7176-executor.py-56: sql: etl/ads_orders.sql execution start.
+2023-03-18 17:44:32,305 INFO 7176-executor.py-62: sql: etl/ads_orders.sql executed successfully.
+2023-03-18 17:44:32,358 INFO 7176-main.py-31: =========================etl end=========================
+
+
+2023-03-18 18:07:49,977 INFO 18348-main.py-16: ========================etl begin========================
+2023-03-18 18:07:49,978 INFO 18348-main.py-20: sql_params: {'sql_file': 'etl/etl_start.sql', 'sql_list_file': None, 'mapping_name': 'etl_start', 'parameter_values': 'begin_date=2023-03-18 15:00:00,end_date=2023-03-18 16:00:00', 'begin_date': '2023-03-18 15:00:00', 'end_date': '2023-03-18 16:00:00'}
+2023-03-18 18:07:50,026 INFO 18348-executor.py-56: sql: etl/etl_start.sql execution start.
+2023-03-18 18:07:50,029 INFO 18348-executor.py-62: sql: etl/etl_start.sql executed successfully.
+2023-03-18 18:07:50,085 INFO 18348-main.py-31: =========================etl end=========================
+
+
+2023-03-18 18:11:55,400 INFO 11852-main.py-16: ========================etl begin========================
+2023-03-18 18:11:55,403 INFO 11852-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 17:00:00,end_date=2023-03-18 18:00:00', 'begin_date': '2023-03-18 17:00:00', 'end_date': '2023-03-18 18:00:00'}
+2023-03-18 18:12:25,426 INFO 18184-main.py-16: ========================etl begin========================
+2023-03-18 18:12:25,428 INFO 18184-main.py-20: sql_params: {'sql_file': None, 'sql_list_file': 'etl/etl_sql_list_hour.txt', 'mapping_name': None, 'parameter_values': 'begin_date=2023-03-18 17:00:00,end_date=2023-03-18 18:00:00', 'begin_date': '2023-03-18 17:00:00', 'end_date': '2023-03-18 18:00:00'}
+2023-03-18 18:12:25,491 INFO 18184-executor.py-56: sql: etl/etl_start.sql execution start.
+2023-03-18 18:12:25,496 INFO 18184-executor.py-62: sql: etl/etl_start.sql executed successfully.
+2023-03-18 18:12:25,593 INFO 18184-executor.py-56: sql: etl/ads_orders.sql execution start.
+2023-03-18 18:12:25,604 INFO 18184-executor.py-62: sql: etl/ads_orders.sql executed successfully.
+2023-03-18 18:12:25,706 INFO 18184-executor.py-56: sql: etl/etl_end.sql execution start.
+2023-03-18 18:12:25,711 INFO 18184-executor.py-62: sql: etl/etl_end.sql executed successfully.
+2023-03-18 18:12:25,769 INFO 18184-main.py-31: =========================etl end=========================
+
+
